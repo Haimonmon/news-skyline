@@ -1,2 +1,3 @@
-# news-clone
-This repository demonstrates the use of a news API to fetch and display live news articles in a structured format. 
+# <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Ringed%20Planet.png" alt="Ringed Planet" width="45" height="45" /> News Site
+> [!IMPORTANT]
+> On Development

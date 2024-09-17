@@ -7,27 +7,11 @@
  *  * const url = `<api-link>`
  */
 
-
-// ? This data function is needed for the real api uses
-// * ====================================================
-// const fetchData = async (url) => {
-//     const response = await fetch(url)
-//     const data = await response.json()
-//     console.log(data)
-// }
-
-// fetchData(url)
-// * ====================================================
-
-
-const fs = require('fs').promises;
-const path = require('path');
-
 const fetchData = async (filePath) => {
     try {
-        const notPermanentData = await fs.readFile(path.join(__dirname, filePath), 'utf-8');
-        const data = JSON.parse(notPermanentData)
-    
+        const notPermanentData = await fetch(filePath);
+        const data = await notPermanentData.json()
+
         if (data.status === 'OK') {
             data.results.forEach(newsPosts => {
                 const newsPostTitle = newsPosts.title;
@@ -41,6 +25,8 @@ const fetchData = async (filePath) => {
     }
 }
 
-const filePafh = 'example-api-data.json';
+const filePafh = './example-api-data.json';
 
 fetchData(filePafh)
+
+// * Run this with html to see on console

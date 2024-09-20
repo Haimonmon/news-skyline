@@ -3,10 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>On Development News</h1>
+    <nav>
+        <div class="logo"> NS </div>
+        <div class="button-nav-container">
+            
+            <div id="home-button" class="nav-button">
+                <img src="./assets/navigation-icons/ICON-Home-0001.png" alt="">
+                <p>Home</p>
+            </div>
+
+            <div id="arts-button" class="nav-button">
+                <img src="./assets/navigation-icons/ICON-Arts-0002.png" alt="">
+                <p>Arts</p>
+            </div>
+
+            <div id="sports-button" class="nav-button">
+                <img src="./assets/navigation-icons/ICON-Sports-0003.png" alt="">
+                <p>Sports</p>
+            </div>
+            
+            <div id="world-button" class="nav-button">
+                <img src="./assets/navigation-icons/ICON-Worldwide-0004.png" alt="">
+                <p>World</p>
+            </div>
+        </div>
+        <div class="second-nav-container">
+            <div class="date-today-container">
+                <p>Saturday, September 20, 2024 <br> Today's Agenda</p>
+            </div>
+
+            <div class="search-bar-container">
+                <button id="search-btn">
+                    <img src="./assets/navigation-icons/ICON-Searchbar-0005.png" alt="">
+                </button>
+                <input type="text" id="search-input" placeholder="Search">
+            </div>
+        </div>
+    </nav>
+    <header>
+
+        <!-- TODO: this will be applied by javascript, temporarily data for a while 👌 -->
+        <div class="header-container">
+            <div class="page-header-img">
+                <img src="./assets/image/IMG-Header-Page-0001.jpg" alt="">
+                <h1 id="page-name">News</h1>
+                <h1 id="skyline">Skyline</h1>
+            </div>
+            <div class="top-news-container">
+                <div class="author">
+                    <p id="publisher">By Shane Goldmacher and Ruth Igielnik</p>
+                    <hr>
+                    <p id="date-published">September 19, 2024</p>
+                </div>
+
+                <div class="news-title">
+                    <h1>Harris Had Stronger Debate, Polls Find, but the Race Remains Deadlocked</h1>
+                </div>
+
+                <div class="news-abstract">
+                    <p>Kamala Harris holds an edge over Donald J. Trump in the battleground state of Pennsylvania. But new surveys found that the race remains a tossup nationally</p>
+                </div>
+
+                <div class="read-more-btn">
+                    <button>Read More</button>
+                </div>
+
+                <div class="carousel-nav">
+                    <div class="circle-nav">
+                        <div id="cnav-btn1" class="circle"></div>
+                        <div id="cnav-btn2" class="circle"></div>
+                        <div id="cnav-btn3" class="circle"></div>
+                        <div id="cnav-btn4" class="circle"></div>
+                    </div>
+
+                    <div class="arrow-nav">
+                        <img id="previous-arrow" src="./assets/navigation-icons/ICON-Arrow-0006.png" alt="">
+                        <img id="forward-arrow" src="./assets/navigation-icons/ICON-Arrow-0006.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <article>
+
+    </article>
     <script src="fetchData.js"></script>
 </body>
 </html>

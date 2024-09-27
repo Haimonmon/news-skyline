@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="second-nav-container">
-            <div class="date-today-container">
+            <div class="date-today-container" id="todays-date">
                 <p>Saturday, September 20, 2024 <br> Today's Agenda</p>
             </div>
 
@@ -57,19 +57,9 @@
                 <h1 id="skyline">Skyline</h1>
             </div>
             <div class="top-news-container">
-                <div class="author">
-                    <p id="publisher">By Shane Goldmacher and Ruth Igielnik</p>
-                    <hr>
-                    <p id="date-published">September 19, 2024</p>
-                </div>
-
-                <div class="news-title">
-                    <h1>Harris Had Stronger Debate, Polls Find, but the Race Remains Deadlocked</h1>
-                </div>
-
-                <div class="news-abstract">
-                    <p>Kamala Harris holds an edge over Donald J. Trump in the battleground state of Pennsylvania. But new surveys found that the race remains a tossup nationally</p>
-                </div>
+                <div class="author" id="hot-topic-publisher"></div>
+                <div class="news-title" id="hot-topic-title"></div>
+                <div class="news-abstract" id="hot-topic-abstract"></div>
 
                 <div class="read-more-btn">
                     <button>Read More</button>
@@ -91,10 +81,50 @@
             </div>
         </div>
     </header>
-    <hr>
-    <article>
 
+    <hr>
+
+    <article id="top-stories-1">
+        <div class="container1">
+            <div class="top-stories"><p>Top Stories</p></div>
+        </div>
+        <div id="top-stories1"></div>
     </article>
+
+    <hr>
+
+    <article id="other-stories1">
+        <div class="container2"></div>
+            <div class="sports-stories"><p>Sports</p></div>
+        </div>
+        <div id="sports-stories"></div>
+    </article>
+
+    <hr>
+
+    <article id="other-stories2">
+        <div class="container2">
+            <div class="arts-stories"><p>Arts</p></div>
+        </div>
+        <div id="art-stories"></div>
+    </article>
+
+    <hr>
+
+    <div class="advertisement">
+        <div class="ad-container">
+            <center> <p class="logo-word">News Skyline</p> </center>
+            
+            <img src="./assets/image/Advertisement Banner.png" alt="">
+            <center><h1>News Skylines are Developing a New Travel Site that can company on your Adventure</h1></center>
+            <center><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Euismod tortor primis, vestibulum tellus arcu penatibus natoque suscipit.</p></center>
+            <div class="coming-soon">
+                <center> <p>Coming Soon </center>
+            </div>
+        </div>
+    </div>
+
+    <hr>
     <script src="fetchData.js"></script>
 </body>
 </html>

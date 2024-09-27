@@ -239,6 +239,7 @@ hr {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .carousel-nav {
@@ -286,4 +287,275 @@ hr {
 
 .arrow-nav #previous-arrow {
     transform: rotate(-180deg);
+}
+
+#top-stories-1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container1 {
+    align-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.top-stories {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    font-family: 'NewYork';
+    height: 60px;
+    width: 300px;
+    font-size: 1.7rem;
+}
+
+#top-stories1 {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+}
+
+.top-stories-container {
+    height: 452px;
+    max-width: 1100px;
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    overflow: hidden;
+
+}
+
+.top-stories-container img {
+    height: auto;
+    width: 621px;
+    object-position: center;
+}
+
+.top-stories-container .information-container {
+    width: 535px;
+    height: 100%;
+}
+
+#top-stories-publisher {
+    margin-top: 5%;
+    color: #857C7C;
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
+
+#top-stories-publisher hr {
+    height: 1.5px;
+    width: 15px;
+    margin-left: 30px;
+    margin-right: 20px;
+    background-color: #857C7C;
+}
+
+#top-stories-title h1{
+    height: auto;
+    max-height: 146px;
+    font-weight: 500;
+}
+
+#top-stories-abstract {
+    align-items: center;
+    font-size: 1rem;
+    color: #7E5F5F;
+    height: 146px;
+    max-height: 170px;
+}
+
+.top-stories-read-more-btn button{
+    height: 56px;
+    width: 175px;
+    background-color: #A099CD;
+    border: 1px solid #5D3570;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#other-stories1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container2 {
+    height: auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.sports-stories {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    font-family: 'NewYork';
+    height: 60px;
+    width: 300px;
+    font-size: 1.7rem;
+}
+
+#sports-stories {
+    height: auto;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    gap: 54px;
+}
+
+.other-sports-news-container {
+    width: 329px;
+    height: auto;
+    cursor: pointer;
+}
+
+.other-sports-news-container img {
+    width: 332px;
+    height: 311px;
+    object-fit: cover;
+}
+
+.other-sports-news-container p {
+    font-size: 1.2rem;
+    color: #7E5F5F;
+}
+
+.other-sports-news-container #read-more {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 90px;
+    height: 10px;
+}
+
+#other-stories2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arts-stories {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    font-family: 'NewYork';
+    height: 60px;
+    width: 300px;
+    font-size: 1.7rem;
+}
+
+#art-stories {
+    height: auto;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    gap: 54px;
+}
+
+.other-arts-news-container {
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+
+.advertisement {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.advertisement img {
+    width: 100%;
+    height: 480px;
+}
+
+.ad-container {
+    max-width: 1100px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ad-container h1 {
+    width: 755px;
+    align-items: center;
+}
+
+.ad-container p {
+    width: 600px;
+    color: #7E5F5F;
+    font-size: 1rem;
+}
+
+.logo-word {
+    font-family: 'NewYork';
+    font-size: 2rem !important;
+    margin: 5px;
+}
+
+.ad-container .coming-soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background-color: #A099CD;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: cell;
+}
+
+.coming-soon p {
+    font-size: 1.3rem;
+    font-family: 'NewYork';
+    color: black;
+    
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:visited {
+    color: inherit; 
+}
+
+a:hover, a:active {
+    color: inherit; 
+    text-decoration: none; 
 }

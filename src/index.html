@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my little Project to create and use New York Times data and as a clone as for Educational Purposes Only 💖.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>NYC Times Clone</title>
 </head>
 <body>
     <nav>
@@ -35,33 +36,30 @@
             </div>
         </div>
         <div class="second-nav-container">
-            <div class="date-today-container" id="todays-date">
-                <p>Saturday, September 20, 2024 <br> Today's Agenda</p>
-            </div>
+            <div class="date-search-container">
+                <div class="date-today-container" id="todays-date"></div>
 
-            <div class="search-bar-container">
-                <button id="search-btn">
-                    <img src="./assets/navigation-icons/ICON-Searchbar-0005.png" alt="">
-                </button>
-                <input type="text" id="search-input" placeholder="Search">
+                <div class="search-bar-container">
+                    <button id="search-btn">
+                        <img src="./assets/navigation-icons/ICON-Searchbar-0005.png" alt="">
+                    </button>
+                    <input type="text" id="search-input" placeholder="Search">
+                </div>
             </div>
         </div>
     </nav>
     <header>
 
-        <!-- TODO: this will be applied by javascript, temporarily data for a while 👌 -->
-        <div class="header-container">
-            <div class="page-header-img">
-                <img src="./assets/image/IMG-Header-Page-0001.jpg" alt="">
-                <h1 id="page-name">News</h1>
-                <h1 id="skyline">Skyline</h1>
+        <!-- ! NOTE: Not Responsive for a while 👌 -->
+        <div class="header-container" id="header-top-news">
+            <div class="page-header-img" id="header-img">
             </div>
             <div class="top-news-container">
                 <div class="author" id="hot-topic-publisher"></div>
                 <div class="news-title" id="hot-topic-title"></div>
                 <div class="news-abstract" id="hot-topic-abstract"></div>
 
-                <div class="read-more-btn">
+                <div class="read-more-btn" id="read-more-top-news">
                     <button>Read More</button>
                 </div>
 
@@ -94,8 +92,9 @@
     <hr>
 
     <article id="other-stories1">
-        <div class="container2"></div>
-            <div class="sports-stories"><p>Sports</p></div>
+        <div class="container2">
+            <div class="sports-stories" id="signage1"><p>Sports</p></div>
+            <img src="./assets/navigation-icons/ICON-Sports-0003.png" alt="">
         </div>
         <div id="sports-stories"></div>
     </article>
@@ -104,7 +103,8 @@
 
     <article id="other-stories2">
         <div class="container2">
-            <div class="arts-stories"><p>Arts</p></div>
+            <img id="arts-logo-icon" src="./assets/navigation-icons/ICON-Arts-0002.png" alt="">
+            <div class="arts-stories" id="signage2"><p>Arts</p></div>
         </div>
         <div id="art-stories"></div>
     </article>
@@ -125,6 +125,32 @@
     </div>
 
     <hr>
+
+    <article id = "top-stories-2">
+        <div id = "top-stories2"></div>
+    </article>
+
+    <hr>
+
+    <footer>
+        <div class="footer-container">
+            <div class="educational-container">
+                <h1>For Educational Purposes Only</h1>
+                <h3>News Skyline</h3>
+                <p>A partial Requirement for Application Development</p>
+            </div>  
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#header-top-news">News</a></li>
+                    <li><a href="#header-top-news">Arts</a></li>
+                    <li><a href="#header-top-news">Sports</a></li>
+                    <li><a href="#header-top-news">World</a></li>
+                </ul>
+                <img src="./assets/image/poweredby_nytimes_30a.png" alt="Thanks to New York Times API Data 💚🌟">
+            </div>
+        </div>
+    </footer>
+    
     <script src="fetchData.js"></script>
 </body>
 </html>

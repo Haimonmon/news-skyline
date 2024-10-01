@@ -1,0 +1,20 @@
+{
+  "name": "news-clone",
+  "version": "1.0.0",
+  "description": "> [!IMPORTANT]\r > On Development",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve src/index.html",
+    "build": "parcel build --public-url https://Haimonmon.github.io/nyc-times-clone src/index.html && rm -rf docs && mv dist docs",
+    "dev": "parcel serve src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "cpx": "^1.5.0"
+  }
+}
